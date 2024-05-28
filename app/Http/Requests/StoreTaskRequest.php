@@ -22,8 +22,7 @@ class StoreTaskRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name'=>'required|string|max:260',
-            'is_completed'=>'required|bool'
+            'name'=>'required|string|max:260'
         ];
     }
 }
