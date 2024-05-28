@@ -6,7 +6,8 @@ use App\Http\Requests\StoreTaskRequest;
 use App\Http\Requests\UpdateTaskRequest;
 use App\Models\Task;
 use App\Http\Controllers\Controller;
-
+use App\Http\Resources;
+use App\Http\Resources\TaskResource;
 
 
 class TaskController extends Controller
@@ -16,7 +17,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        return Task::all();
+        return TaskResource::collection(Task::all());
     }
 
     /**
@@ -24,7 +25,7 @@ class TaskController extends Controller
      */
     public function create()
     {
-        return Task::all();
+        
     }
 
     /**
@@ -40,7 +41,7 @@ class TaskController extends Controller
      */
     public function show(Task $task)
     {
-        //
+        return TaskResource::make($task);
     }
 
     /**
