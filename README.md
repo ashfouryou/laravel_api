@@ -1,5 +1,8 @@
 # Creating APIs with Laravel
 
+![Api flow](api_flow.jpeg)
+
+
 ## Introduction
 
 This guide provides step-by-step instructions on how to create APIs using Laravel, a popular PHP framework. Follow these instructions to set up a Laravel project, define models, create controllers, and implement API endpoints.
